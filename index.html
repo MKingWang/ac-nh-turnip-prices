@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Animal Crossing - Turnip Prophet</title>
+  <title>动物之森 - 萝卜先知</title>
   <meta name="description" content="Animal Crossing - Turnip Prophet">
   <meta name="author" content="Mike Bryant">
 
@@ -30,17 +30,16 @@
 <body>
 
   <div class="dialog-box">
-    <h2 class="dialog-box__name">Daisy Mae</h2>
-    <p>Hello, and welcome to the <b>Turnip Prophet</b> app on your Nook Phone.</p>
-    <p>This app lets you track your island's turnip prices daily, but you'll have to put the prices in yourself!
+    <h2 class="dialog-box__name">黛西梅</h2>
+    <p>你好, 欢迎使用Nook Phone上的<b>萝卜先知</b>应用。</p>
+    <p>这个应用将预测你岛上大头菜价格走势！但是需要你自己输入价格。
     </p>
-    <p>After that, the Turnip Prophet app will <b>magically</b> predict the turnip prices you'll have for the rest of
-      the week.
+    <p>然后！萝卜先知应用将会<b>神奇的</b>预测本周大头菜的价格走势！！
     </p>
   </div>
 
   <div class="nook-phone">
-    <h1>Turnip Prophet</h1>
+    <h1>萝卜先知</h1>
 
     <div>
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -63,185 +62,183 @@
 
       <form class="input__form">
         <div class="form__row">
-          <h6>First-Time Buyer</h6>
+          <h6>第一次购买</h6>
           <div class="input__group">
-            <label>Is this your first time buying turnips from Daisy Mae on your island?<i>(This affects your
-                pattern)</i></label>
+            <label>这是你第一次在你的岛上购买大头菜么?<i>(这会影响你的价格预测)</i></label>
             <div class="input__radio-buttons">
               <input type="radio" id="first-time-radio-no" name="first-time" value="false" checked>
-              <label for="first-time-radio-no">No</label>
+              <label for="first-time-radio-no">不是</label>
               <input type="radio" id="first-time-radio-yes" name="first-time" value="true">
-              <label for="first-time-radio-yes">Yes</label>
+              <label for="first-time-radio-yes">是的</label>
             </div>
           </div>
         </div>
 
         <div class="form__row">
-          <h6>Previous Pattern</h6>
+          <h6>历史走势</h6>
           <div class="input__group">
-            <label for="">What was last week's turnip price pattern?<i>(This affects your pattern)</i></label>
+            <label for="">你上周的价格走势如何？<i>(这会影响你的价格预测)</i></label>
             <div class="input__radio-buttons">
               <input type="radio" id="pattern-radio-unknown" name="pattern" value="-1" checked>
-              <label for="pattern-radio-unknown">I don't know</label>
+              <label for="pattern-radio-unknown">不知道</label>
               <input type="radio" id="pattern-radio-fluctuating" name="pattern" value="0">
-              <label for="pattern-radio-fluctuating">Fluctuating</label>
+              <label for="pattern-radio-fluctuating">上下波动</label>
               <input type="radio" id="pattern-radio-small-spike" name="pattern" value="3">
-              <label for="pattern-radio-small-spike">Small Spike</label>
+              <label for="pattern-radio-small-spike">小高峰</label>
               <input type="radio" id="pattern-radio-large-spike" name="pattern" value="1">
-              <label for="pattern-radio-large-spike">Large Spike</label>
+              <label for="pattern-radio-large-spike">大高峰</label>
               <input type="radio" id="pattern-radio-decreasing" name="pattern" value="2">
-              <label for="pattern-radio-decreasing">Decreasing</label>
+              <label for="pattern-radio-decreasing">持续走低</label>
             </div>
           </div>
         </div>
 
         <div class="form__row">
-          <h6>Sunday</h6>
+          <h6>周日</h6>
           <div class="input__group">
-            <label>What was the price of turnips this week? <i>(If this is your first time buying turnips, this field
-                will be disabled)</i></label>
+            <label>这周购买大头菜的价格是多少? <i>(如果是第一购买大头菜，这个模式将被禁用)</i></label>
             <input type="number" id="buy" placeholder="..." />
 
           </div>
         </div>
 
-        <i>AM - 8:00 am to 11:59 am</i>
-        <i>PM - 12:00 pm to 10:00 pm</i>
+        <i>上午 - 上午8:00 到 上午11:59</i>
+        <i>下午 - 中午12:00 到 晚上10:00</i>
         <div class="form__flex-wrap">
           <div class="form__row">
-            <h6>Monday</h6>
+            <h6>星期一</h6>
             <div class="input__group">
-              <label for="sell_2">AM</label>
+              <label for="sell_2">上午</label>
               <input type="number" id="sell_2" placeholder="..." />
             </div>
             <div class="input__group">
-              <label for="sell_3">PM</label>
+              <label for="sell_3">下午</label>
               <input type="number" id="sell_3" placeholder="..." />
             </div>
           </div>
 
           <div class="form__row">
-            <h6>Tuesday</h6>
+            <h6>星期二</h6>
             <div class="input__group">
-              <label for="sell_4">AM</label>
+              <label for="sell_4">上午</label>
               <input type="number" id="sell_4" placeholder="..." />
             </div>
             <div class="input__group">
-              <label for="sell_5">PM</label>
+              <label for="sell_5">下午</label>
               <input type="number" id="sell_5" placeholder="..." />
             </div>
           </div>
 
           <div class="form__row">
-            <h6>Wednesday</h6>
+            <h6>星期三</h6>
             <div class="input__group">
-              <label for="sell_6">AM</label>
+              <label for="sell_6">上午</label>
               <input type="number" id="sell_6" placeholder="..." />
             </div>
             <div class="input__group">
-              <label for="sell_7">PM</label>
+              <label for="sell_7">下午</label>
               <input type="number" id="sell_7" placeholder="..." />
             </div>
           </div>
 
           <div class="form__row">
-            <h6>Thursday</h6>
+            <h6>星期四</h6>
             <div class="input__group">
-              <label for="sell_8">AM</label>
+              <label for="sell_8">上午</label>
               <input type="number" id="sell_8" placeholder="..." />
             </div>
             <div class="input__group">
-              <label for="sell_9">PM</label>
+              <label for="sell_9">下午</label>
               <input type="number" id="sell_9" placeholder="..." />
             </div>
           </div>
 
           <div class="form__row">
-            <h6>Friday</h6>
+            <h6>星期五</h6>
             <div class="input__group">
-              <label for="sell_10">AM</label>
+              <label for="sell_10">上午</label>
               <input type="number" id="sell_10" placeholder="..." />
             </div>
             <div class="input__group">
-              <label for="sell_11">PM</label>
+              <label for="sell_11">下午</label>
               <input type="number" id="sell_11" placeholder="..." />
             </div>
           </div>
 
           <div class="form__row">
-            <h6>Saturday</h6>
+            <h6>星期六</h6>
             <div class="input__group">
-              <label for="sell_12">AM</label>
+              <label for="sell_12">上午</label>
               <input type="number" id="sell_12" placeholder="..." />
             </div>
             <div class="input__group">
-              <label for="sell_13">PM</label>
+              <label for="sell_13">下午</label>
               <input type="number" id="sell_13" placeholder="..." />
             </div>
           </div>
         </div>
         <button type="button" id="reset" class="reset-button" name="action">
-          Reset Turnip Prophet
+          清空
         </button>
       </form>
 
 
 
-      <h2>Output</h2>
+      <h2>价格走势预测</h2>
 
       <div class="table-wrapper">
         <table id="turnipTable">
           <thead>
             <tr>
-              <th valign="bottom">Pattern</th>
-              <th valign="bottom">% Chance</th>
-              <th valign="bottom">Sunday</th>
+              <th valign="bottom">走势</th>
+              <th valign="bottom">概率 %</th>
+              <th valign="bottom">周日价格</th>
               <th colspan="2">
-                <div>Monday</div>
+                <div>星期一</div>
                 <div>
-                  <span>AM</span>
-                  <span>PM</span>
+                  <span>上午</span>
+                  <span>下午</span>
                 </div>
               </th>
               <th colspan="2">
-                <div>Tuesday</div>
+                <div>星期二</div>
                 <div>
-                  <span>AM</span>
-                  <span>PM</span>
+                  <span>上午</span>
+                  <span>下午</span>
                 </div>
               </th>
               <th colspan="2">
                 <div>
-                  <div>Wednesday</div>
+                  <div>星期三</div>
                   <div>
-                    <span>AM</span>
-                    <span>PM</span>
+                    <span>上午</span>
+                    <span>下午</span>
                   </div>
                 </div>
               </th>
               <th colspan="2">
-                <div>Thursday</div>
+                <div>星期四</div>
                 <div>
-                  <span>AM</span>
-                  <span>PM</span>
+                  <span>上午</span>
+                  <span>下午</span>
                 </div>
               </th>
               <th colspan="2">
-                <div>Friday</div>
+                <div>星期五</div>
                 <div>
-                  <span>AM</span>
-                  <span>PM</span>
+                  <span>上午</span>
+                  <span>下午</span>
                 </div>
               </th>
               <th colspan="2">
-                <div>Saturday</div>
+                <div>星期六</div>
                 <div>
-                  <span>AM</span>
-                  <span>PM</span>
+                  <span>上午</span>
+                  <span>下午</span>
                 </div>
               </th>
-              <th valign="bottom">Guaranteed Minimum</th>
-              <th valign="bottom">Potential Maximum</th>
+              <th valign="bottom">保底价格</th>
+              <th valign="bottom">可能的最高价格</th>
             </tr>
           </thead>
           <tbody id="output"></tbody>
@@ -267,22 +264,21 @@
   </div>
 
   <div class="dialog-box">
-    <h2 class="dialog-box__name">Daisy Mae</h2>
-    <p>After you've listed some turnip prices, the Turnip Prophet will run some numbers and display the different
-      possible patterns that your island may experience.</p>
-    <p>This app is still in development, but will improve over time!</p>
+    <h2 class="dialog-box__name">黛西梅</h2>
+    <p>在你输入一些大头菜的价格之后, 萝卜先知将会计算数据并且展示你岛上可能的价格走势。</p>
+    <p>这款应用正在开发中，但我们会不断改进！</p>
   </div>
 
   <div class="dialog-box">
-    <h2 class="dialog-box__name">Daisy Mae</h2>
+    <h2 class="dialog-box__name">黛西梅</h2>
     <p>
-      None of this would have been possible without <a
-        href="https://twitter.com/_Ninji/status/1244818665851289602?s=20">Ninji's work</a> figuring out just how Timmy
-      and Tommy value their turnips.
+      如果没有<a
+      href="https://twitter.com/_Ninji/status/1244818665851289602?s=20">Ninji</a>的工作来弄清楚豆狸和粒狸如何看待他们的萝卜，那么这一切都是不可能的。
+      
     </p>
     <p>
-      Support, comments and contributions are available through <a
-        href="https://github.com/mikebryant/ac-nh-turnip-prices/issues">Github</a>
+      可以通过<a
+      href="https://github.com/mikebryant/ac-nh-turnip-prices/issues">Github</a>获得支持，评论和贡献
     </p>
   </div>
 
